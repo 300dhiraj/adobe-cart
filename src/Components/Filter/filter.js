@@ -57,6 +57,7 @@ class Filter extends Component {
             if (item.price.display >= min && item.price.display <= max) {
                 return item;
             }
+            return null;
         });
         this.props.sortInitialData(sortedList);
     }

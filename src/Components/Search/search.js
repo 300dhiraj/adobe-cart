@@ -35,8 +35,9 @@ class Search extends Component {
         if (e.target.value) {
             sortedList = list.filter((item) => {
                 if (item.name.toLowerCase().includes(e.target.value.toLowerCase())) {
-                    return item
+                    return item;
                 }
+                return null;
             });
         } else {
             getInitialData()

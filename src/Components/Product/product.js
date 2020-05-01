@@ -6,7 +6,7 @@ class Product extends Component {
     render() {
         return (
             <div className='product'>
-                <img src={this.props.product.image} alt='no image'></img>
+                <img src={this.props.product.image} alt=''></img>
                 <div className='product-name'>{this.props.product.name}</div>
                 <div className='price-details'>
                     <span><b>&#x20B9;{this.props.product.price.display}</b></span>

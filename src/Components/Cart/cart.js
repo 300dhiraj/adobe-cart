@@ -8,7 +8,7 @@ class Cart extends Component {
     render() {
         return (
             <div className='cartIcon'>
-                <Link to="/Cart"><span className='cartCount'>{this.props.cartItems.length}</span><img src={CartIcon}></img></Link>
+                <Link to="/Cart"><span className='cartCount'>{this.props.cartItems.length}</span><img src={CartIcon} alt=''></img></Link>
             </div>
         )
     }

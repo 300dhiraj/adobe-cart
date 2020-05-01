@@ -68,6 +68,7 @@ class CartItem extends Component {
             if (i.name !== item.name) {
                 return i;
             }
+            return null;
         });
         this.props.updateCart(remainedData);
         this.recalculatePrice(remainedData);
@@ -84,6 +85,7 @@ class CartItem extends Component {
             data.price += (item.price.actual + item.price.display) * item.quantity;
             data.discount += item.price.actual * item.quantity;
             data.total += item.price.display * item.quantity;
+            return null;
         });
         this.props.updatePrice(data);
     }
